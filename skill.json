@@ -1,0 +1,41 @@
+{
+  "name": "genpark-creator-paid-ad-whitelisting-token-broker-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Creator paid ad whitelisting token broker managing Meta Partnership Ads and TikTok Spark Ads authorization tokens securely.",
+  "author": "genpark",
+  "category": "ad-tech",
+  "tags": [
+    "spark-ads",
+    "ad-whitelisting",
+    "partnership-ads",
+    "creator-licensing",
+    "paid-social-boosting"
+  ],
+  "inputs": {
+    "creator_handle": {
+      "type": "string"
+    },
+    "platform_ad_network": {
+      "type": "string"
+    },
+    "access_duration_days": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "token_broker_id": {
+      "type": "string"
+    },
+    "platform_network": {
+      "type": "string"
+    },
+    "identity_handshake_verified": {
+      "type": "boolean"
+    },
+    "ad_manager_integration_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
